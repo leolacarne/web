@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'ohgm.dev',
-  siteUrl: 'https://ohgm.dev',
+  siteUrl: 'https://o-hgm.github.io',
   plugins: [],
 
   pathPrefix: '/www-public',
