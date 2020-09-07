@@ -3,10 +3,14 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "deploy": "gh-pages -d dist/ -b master -r git@github.com:o-hgm/o-hgm.github.io.git",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

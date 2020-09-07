@@ -5,6 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'ohgm.dev',
+  siteUrl: 'https://ohgm.dev',
+  plugins: [],
+
+  pathPrefix: '/www-public',
 }
