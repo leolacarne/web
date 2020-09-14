@@ -25,7 +25,7 @@ jobs:
           npm run-script build
 
       - name: Add CNAME to dist folder
-        run: echo ohgm.dev >> ./dist/CNAME
+        run: echo ohgm.dev > ./dist/CNAME
 
       - name: Deploy 🚀🔧
         uses: JamesIves/github-pages-deploy-action@releases/v3
