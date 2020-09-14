@@ -1,15 +1,24 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+  <div class="w-full h-full flex flex-col items-center small-caps ">
+    <section id="profile" class="flex flex-col items-center my-auto ">
+      <g-image alt="Me" class="rounded-full" src="~/assets/profile.jpeg" width="135" />
+      <p class="text-gray-800 my-2 text-3xl">Oscar Hafner</p>
+      <p class="text-gray-800 mt-1 mb-6 text-xl">Software development, electronics and random stuff</p>
+      <nav class="flex flex-row w-full items-center justify-center">
+        <p class="flex flex-row mx-1 px-1">
+          <a class="text-lg" href="#">About</a>
+        </p>
+        <p class="flex flex-row mx-1 px-1">
+          <a class="text-lg" href="#">Posts</a>
+        </p>
+        <p class="flex flex-row mx-1 px-1">
+          <a class="text-lg" href="#">Work</a>
+        </p>
       </nav>
-    </header>
-    <slot/>
+    </section>
+    <main class="my-auto">
+      <slot/>
+    </main>
   </div>
 </template>
 
@@ -22,29 +31,4 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>

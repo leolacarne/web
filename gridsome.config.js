@@ -7,7 +7,10 @@
 module.exports = {
   siteName: 'ohgm.dev',
   siteUrl: 'https://o-hgm.github.io',
-  plugins: [],
+  plugins: [{
+    use: "gridsome-plugin-tailwindcss",
+  }
+],
 
   pathPrefix: '/www-public',
 }
