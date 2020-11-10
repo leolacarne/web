@@ -25,7 +25,7 @@ jobs:
           npm run-script build
 
       - name: Add CNAME to dist folder
-        run: echo ohgm.dev > ./dist/CNAME
+        run: echo leolacarne.com > ./dist/CNAME
 
       - name: Deploy 🚀🔧
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -33,4 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           BRANCH: master
           FOLDER: dist
-          REPOSITORY_NAME: o-hgm/o-hgm.github.io
+          REPOSITORY_NAME: leolacarne/leolacarne.github.io
