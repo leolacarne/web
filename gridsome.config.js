@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'ohgm.dev',
-  siteUrl: 'https://o-hgm.github.io',
+  siteName: 'La Carne',
+  siteUrl: 'https://leolacarne.github.io',
   plugins: [{
     use: "gridsome-plugin-tailwindcss",
   }
